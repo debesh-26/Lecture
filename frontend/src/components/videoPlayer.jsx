@@ -18,7 +18,7 @@ const VideoPlayer = ({ videoId }) => {
     const initializePlayer = async () => {
       try {
         const videoRes = await axios.get(
-          `http://localhost:8000/api/videos/${videoId}`,
+          `https://lecture-qvg9.onrender.com/api/videos/${videoId}`,
           {
             headers: { "x-auth-token": localStorage.getItem("token") },
           }
@@ -27,7 +27,7 @@ const VideoPlayer = ({ videoId }) => {
         setVideoDuration(videoRes.data.duration);
 
         const progressRes = await axios.get(
-          `http://localhost:8000/api/progress/${videoId}`,
+          `https://lecture-qvg9.onrender.com/api/progress/${videoId}`,
           {
             headers: { "x-auth-token": localStorage.getItem("token") },
           }
@@ -51,7 +51,7 @@ const VideoPlayer = ({ videoId }) => {
   const saveProgressToServer = async (newIntervals, currentTime) => {
     try {
       const res = await axios.put(
-        `http://localhost:8000/api/progress/${videoId}`,
+        `https://lecture-qvg9.onrender.com/api/progress/${videoId}`,
         {
           intervals: newIntervals,
           currentTime,

@@ -10,7 +10,7 @@ const VideoList = () => {
     const fetchVideos = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://localhost:8000/api/videos', {
+        const res = await axios.get('https://lecture-qvg9.onrender.com/api/videos', {
           headers: {
             'x-auth-token': token
           },

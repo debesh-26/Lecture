@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import {
   getStorage,
   ref,
@@ -40,7 +40,7 @@ const VideoUpload = () => {
           try {
             const token = localStorage.getItem("token");
             const res = await axios.post(
-              "http://localhost:8000/api/videos/upload",
+              "https://lecture-qvg9.onrender.com/api/videos/upload",
               {
                 title,
                 duration,

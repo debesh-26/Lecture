@@ -14,7 +14,6 @@ const Header = ({isauthenticated,setisAuthenticated,urlLimit}) => {
 }
 const handleLogout=()=>{
   localStorage.removeItem("token");
-  localStorage.removeItem("urlLimit")
   setisAuthenticated(false);
   navigate('/')
 }
@@ -25,7 +24,6 @@ const handleLogout=()=>{
     <div className="auth-buttons">
       {isauthenticated ? (
         <>
-          {urlLimit && <span className="url-limit">Limit : {urlLimit}</span>}
           <button className="login-btn" onClick={handleLogout}>Logout</button>
         </>
       ) : (
