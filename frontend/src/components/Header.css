@@ -1,0 +1,105 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  background-color: rgb(31, 169, 185);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 55px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.header h1 {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+}
+
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+
+.auth-buttons button {
+  margin-left: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #101110;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+  background-color: #272827;
+}
+
+.url-limit {
+  font-size: 1rem;
+  color: white;
+  margin-right: 1rem;
+}
+
+
+@media (max-width: 600px) {
+  .header h1 {
+      font-size: 1.5rem;
+  }
+
+  .auth-buttons button {
+      width: 90px;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+  }
+
+  .url-limit {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+      padding: 0.1rem 0.5rem;
+  }
+
+  .header h1 {
+      font-size: 1.9rem;
+  }
+
+  .auth-buttons button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin-left: 0.5rem;
+  }
+
+  .url-limit {
+      font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+      padding: 0 2rem;
+  }
+
+  .header h1 {
+      font-size: 2.2rem;
+  }
+
+  .auth-buttons button {
+      padding: 0.7rem 1.3rem;
+      font-size: 1.1rem;
+  }
+}
+
+ 
+  

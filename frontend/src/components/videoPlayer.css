@@ -1,0 +1,38 @@
+.video-player-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-player-controls {
+  background-color: #222;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 14px;
+}
+
+.video-player-controls button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.video-player-controls button:hover {
+  color: #007bff;
+}
